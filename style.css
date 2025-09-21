@@ -1,0 +1,35 @@
+/* Header container with background image */
+.header-container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    gap: 20px;               /* space between elements */
+    margin: 20px 0;
+
+    /* Background settings */
+    background-image: url("C:\Users\routl\Desktop\LOGO.jpg"); /* replace with your image path */
+    background-size: cover;      /* make image cover whole container */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat;
+    padding: 40px;               /* space inside container */
+    border-radius: 10px;         /* optional rounded corners */
+}
+
+/* Main title - largest font */
+.header-container .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* text visible on image */
+}
+
+/* Subheader - smallest font */
+.header-container .subheader {
+    font-size: 16px;
+    color: white;
+}
+
+/* Middle text - medium font */
+.header-container .middle-text {
+    font-size: 24px;
+    color: white;
+}
