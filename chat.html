@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🗨 Confidential AI Chat</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Chat with AI</a>
+            <a href="/resources">Resources</a>
+            <a href="/help">Emergency Help</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    <main>
+        <div id="chatBox"></div>
+        <input type="text" id="userMessage" placeholder="Type your message">
+        <button id="sendBtn">Send</button>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
